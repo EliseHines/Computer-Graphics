@@ -14,7 +14,7 @@ void main()
 // TODO: Replace with your code...
 // If gl_Position was set correctly, this gives a totally red cube
 
-// set ambien
+// set ambient
 float ambStrength = 0.1;
 vec3 ambient = ambStrength * lightColor;
 
@@ -31,6 +31,7 @@ Vector3d reflectDirection = reflect(-lightDirection, norm);
 float spec = pow(max(dot(viewDirection, reflectDirection), 0.0), 32);
 Vector3d specular = specStrength * spec * lightColor;
 
+//set final and push color
 vec3 final = (specular + diffuse + ambient) * objectColor;
 
 color = vec4(final, 1.0f);
