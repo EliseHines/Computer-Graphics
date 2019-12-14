@@ -1,0 +1,6 @@
+I coded and tested in Visual Studio 2017.
+I used help from http://web.cse.ohio-state.edu/~shen.94/681/Site/Slides_files/ to get pseudo code and some math, as well as some math online.
+
+My phong shading, refletive surface, and shadow is all done in the trace function.
+Problem1.h and Problem1.cpp draw a plane behind the center ball, it is colored blue in problem2.png through problem4.png.
+
